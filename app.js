@@ -1,4 +1,4 @@
-const Wrapper = document.querySelector(".cards")
+const Wrapper = document.querySelector(".cards");
 // const button = document.querySelector(".btn")
 
 
@@ -105,7 +105,7 @@ const products = [
         "price": 6.50
      }
     ]
-function createCard(item) { 
+function createCard(item) {
         card = document.createElement("div");
     
         card.classList.add("cardOne");
@@ -113,26 +113,26 @@ function createCard(item) {
         cardContent = `
               <div class="cardOne">
         <div class="cardImg">
-            <img src=${item.image.desktop} alt="image">
+            <img src=${meal.strCategoryThumb} alt="image">
             <button class="btn">
                 <img src="./assets/images/icon-add-to-cart.svg" alt="to cart image">
                 <p>Add to Cart</p>
             </button>
         </div>
         <div class="cardCont">
-            <p>${item.category}</p>
-            <h3>${item.name}</h3>
-            <span><p>$ ${item.price}</p></span>
+            <h3>${meal.strCategory}</h3>
+            <p>${description}...</p>
+            <span><p>$20.00</p></span>
         </div>
     </div>       
         `;
-    
-        card.innerHTML = cardContent;
-    
-        Wrapper.appendChild(card);
-     }
 
-products.map ((item) => {
+  card.innerHTML = cardContent;
+
+  Wrapper.appendChild(card);
+}
+
+products.filter((item) => {
     return createCard(item);
 })
 
