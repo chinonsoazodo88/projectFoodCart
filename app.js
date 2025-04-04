@@ -105,7 +105,7 @@ const products = [
         "price": 6.50
      }
     ]
-function createCard(item) {
+function createCard(item) { 
         card = document.createElement("div");
     
         card.classList.add("cardOne");
@@ -132,7 +132,7 @@ function createCard(item) {
         Wrapper.appendChild(card);
      }
 
-products.filter((item) => {
+products.map ((item) => {
     return createCard(item);
 })
 
