@@ -62,7 +62,7 @@ body{
     bottom: -10px;
     display: flex;
     gap: .5rem;
-    align-items: center;
+    align-meals: center;
     border: 1px solid hsl(12, 20%, 44%);
     border-radius: 20px;
     color: hsl(14, 65%, 9%);
